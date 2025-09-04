@@ -1,6 +1,5 @@
 import type { Request, Response, NextFunction } from 'express';
 import Task, { ITask } from '../models/Task';
-import { toString } from 'express-validator/lib/utils';
 
 // * Reescribir scope global del Request
 declare global {

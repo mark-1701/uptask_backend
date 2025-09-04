@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
-import Note, { INote } from '../models/Note';
 import { Types } from 'mongoose';
+import Note, { INote } from '../models/Note';
 
 type NoteParams = {
   noteId: Types.ObjectId;

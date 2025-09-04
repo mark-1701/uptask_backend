@@ -1,10 +1,10 @@
 import type { Request, Response } from 'express';
-import User from '../models/User';
-import { checkPassword, hashPassword } from '../utils/auth';
-import Token from '../models/Token';
-import { generateToken } from '../utils/token';
-import { AuthEmail } from '../emails/AuthEmail';
 import { generateJWT } from '../utils/jwt';
+import { AuthEmail } from '../emails/AuthEmail';
+import { checkPassword, hashPassword } from '../utils/auth';
+import { generateToken } from '../utils/token';
+import User from '../models/User';
+import Token from '../models/Token';
 
 export class AuthController {
   static createAccount = async (req: Request, res: Response) => {

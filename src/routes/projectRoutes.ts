@@ -1,8 +1,6 @@
 import { Router } from 'express';
-import { ProjectController } from '../controllers/ProjectController';
 import { body, param } from 'express-validator';
 import { handleInputErrors } from '../middleware/validation';
-import { TaskController } from '../controllers/TaskController';
 import { projectExists } from '../middleware/project';
 import {
   hasAuthorization,
@@ -12,6 +10,8 @@ import {
 import { authenticate } from '../middleware/auth';
 import { TeamMemberController } from '../controllers/TeamController';
 import { NoteController } from '../controllers/NoteController';
+import { TaskController } from '../controllers/TaskController';
+import { ProjectController } from '../controllers/ProjectController';
 
 const router = Router();
 
