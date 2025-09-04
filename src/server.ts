@@ -11,7 +11,7 @@ dotenv.config();
 connectDB();
 const app = express();
 
-// app.use(cors(corsConfig));
+app.use(cors(corsConfig));
 
 // Loggin
 app.use(morgan('dev'));
