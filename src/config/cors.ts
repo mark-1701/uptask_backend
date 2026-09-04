@@ -18,6 +18,12 @@
 //   }
 // };
 
+/*
+ * La configuración anterior de CORS estaba destinada al despliegue
+ * en Fl0. Tras migrar el proyecto a Vercel, fue necesario actualizar
+ * los orígenes permitidos para adaptarlos al nuevo entorno.
+ */
+
 import { CorsOptions } from 'cors';
 
 export const corsConfig: CorsOptions = {
