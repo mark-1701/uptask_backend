@@ -9,6 +9,7 @@ export const connectDB = async () => {
     console.log(colors.magenta.bold(`MongoDB Conectado en: ${url}`));
   } catch (error) {
     // process.exit(1); // 0 - termina bien, 1 - termina mal
+    // comentario eliminable en el futuro
     console.log(colors.red.bold('Error al conectar a MongoDB'), error);
     exit(1);
   }
